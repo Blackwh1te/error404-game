@@ -1,7 +1,10 @@
 @import "_normalize.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
  
 * {
    box-sizing: border-box;   
+   margin: 0;
+   padding: 0;
 }
 
 .container {
@@ -10,7 +13,7 @@
 }
 
 body {
-   color: #FFFFFF;
+   font-family: 'Roboto', sans-serif;
    background: rgb(126,126,208);
    background: linear-gradient(90deg, rgba(126,126,208,1) 38%, rgba(0,212,255,1) 100%);
 }
@@ -33,6 +36,7 @@ $gameSize: 320px;
 
    .container {
       display: flex;
+      align-items: center;
       padding: 50px 15px;
       background: #FFFFFF;
    }
@@ -94,14 +98,29 @@ $gameSize: 320px;
 
    // .error404__title
    &__title {
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 56px;
+      text-transform: uppercase;      
+      color: #000000;
    }
 
    // .error404__subtitle
    &__subtitle {
+      margin: 0;
+      margin-top: 17px;
+      padding: 0;
+      max-width: 400px;
+      font-size: 18px;
+      line-height: 150%;
+      color: #727272;      
    }
 
    // .error404__btn
    &__btn {
+      margin-top: 36px;
    }
 }
 
@@ -110,6 +129,12 @@ $gameSize: 320px;
 .subtitle {
 }
 .btn {
+   display: inline-block;
+   padding: 18px 32px;
+   color: #FFFFFF;
+   background: #3988DE;
+   border-radius: 10px;
+   text-decoration: none;
 }
 .footer {
 }
