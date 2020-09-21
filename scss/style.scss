@@ -1,0 +1,115 @@
+@import "_normalize.scss";
+ 
+* {
+   box-sizing: border-box;   
+}
+
+.container {
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+body {
+   color: #FFFFFF;
+   background: rgb(126,126,208);
+   background: linear-gradient(90deg, rgba(126,126,208,1) 38%, rgba(0,212,255,1) 100%);
+}
+
+.header {
+}
+
+$gameSize: 320px;
+
+.game-active-item {
+   background: #4E9EFA !important;
+
+   &:hover {
+      background: #72BDFF !important;
+   }
+}
+
+.error404 {
+   margin: 50px 0;
+
+   .container {
+      display: flex;
+      padding: 50px 15px;
+      background: #FFFFFF;
+   }
+
+   // .error404__game
+   &__game {         
+      min-width: $gameSize;
+      width: $gameSize;
+      height: $gameSize;
+      min-height: $gameSize;
+      display: flex;
+      flex-wrap: wrap;
+      // background:
+      //    linear-gradient(
+      //       limegreen,
+      //       transparent
+      //    ),
+      //    linear-gradient(
+      //       90deg,
+      //       skyblue,
+      //       transparent
+      //    ),
+      //    linear-gradient(
+      //       -90deg,
+      //       coral,
+      //       transparent
+      //    );	
+      // background-blend-mode: screen;
+
+      // background: #4E9EFA;
+   }
+
+   // .error404__game-item-wrapper
+   &__game-item-wrapper {
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+   }
+
+   // .error404__game-item
+   &__game-item {
+      width: 100%;
+      height: 100%;
+      background: #E5E5E5;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+         background: #E0E0E0;         
+      }
+
+
+   }
+
+   // .error404__body
+   &__body {
+      margin-left: 30px;
+   }
+
+   // .error404__title
+   &__title {
+   }
+
+   // .error404__subtitle
+   &__subtitle {
+   }
+
+   // .error404__btn
+   &__btn {
+   }
+}
+
+.title {
+}
+.subtitle {
+}
+.btn {
+}
+.footer {
+}
